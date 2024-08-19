@@ -1,5 +1,5 @@
--- paste key here
-getgenv().skibidi_script_key = script_key; -- do not touch
+script_key="Key";
+getgenv().script_key = script_key;
 
 getgenv().Rivals = {
     KenCarsonJumpScare = {
