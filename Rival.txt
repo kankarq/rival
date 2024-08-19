@@ -1,0 +1,95 @@
+-- paste key here
+getgenv().skibidi_script_key = script_key; -- do not touch
+
+getgenv().Rivals = {
+    KenCarsonJumpScare = {
+        Enabled = true
+    },
+    cameralock = {        
+        On = true,
+        Key = "C",
+        UseAirShot = true,
+        EasingStyles = Enum.EasingStyle.Exponential,
+        Part = "HumanoidRootPart",
+        AirShotPart = "Head",
+        AirShotSmoothness = 0.1,
+        AirShotPrediction = 0.2,
+        Prediction = 0.14,
+        Smoothness = 0.1,
+        ['FoV'] = {
+            Visible = false,
+            Color = Color3.new(1, 1, 1),
+            Radius = 1000,
+            Transparency = 0.1
+        }
+    },
+    
+    Target = {
+        On = true,
+        Prediction = 0.12445,
+        UseAirShot = true,
+        MultipleHitParts = {"HumanoidRootPart", "Head", "UpperTorso"},
+        Fov = {
+            Visible = false,
+            Color = Color3.new(1, 1, 1),
+            Radius = 1000,
+            Transparency = 0.1
+        }
+    },
+    
+    Macro = {
+        Keybind = "X",
+        Mode = "ThirdPerson", -- FirstPerson, ThirdPerson
+        Speed = 0.00001
+    },
+    
+    Safety = {
+        KO_CHECK = true,
+        Grab_CHECK = false
+    },
+    
+    ['Resolver'] = {
+        Bind = "G", -- Not fixxed yet stay tune in the next update
+        toggle = false
+    },
+    ['DottedFov'] = {
+        Visible = false,          
+        Radius = 100,            -- Adjust radius as needed
+        DotSize = 5,             -- Size of each dot
+        DotGap = 14,             -- Gap between dots
+        PulseSpeed = 100,        -- Speed of the pulsing effect
+        ColorSpeed = 100,        -- Speed of the color transition for RGB effect
+    },
+    
+    ['Features'] = {
+        wallcheck = false,
+        gunCheck = false,
+        Tracers = {
+            Visible = true,
+            Color = Color3.fromRGB(255, 255, 255),
+            Thickness = 1,
+            Transparency = 4,
+            HighlightColor = Color3.fromRGB(255, 255, 255),
+            HighlightThickness = 1,
+            HighlightTransparency = 5
+        },
+        FOV = {
+            Visible = false,
+            Radius = 200,
+            Color = Color3.fromRGB(192, 192, 192),
+            Thickness = 0.6,
+            Transparency = 0.4
+        },
+        Circle = {
+            Visible = true,
+            Radius = 34,
+            Color = Color3.fromRGB(0, 0, 0),
+            Thickness = 1,
+            Transparency = 5,
+            HighlightRadius = 34,
+            HighlightColor = Color3.fromRGB(255, 0, 0),
+            HighlightThickness = 1,
+            HighlightTransparency = 5
+        }
+    }
+}
