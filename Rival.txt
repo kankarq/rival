@@ -1,8 +1,8 @@
 script_key="Key";
 getgenv().script_key = script_key;
 
-getgenv().Rivals = {
-    KenCarsonJumpScare = {
+getgenv().Rival = {
+    Intro = {
         Enabled = true
     },
     cameralock = {        
@@ -16,7 +16,7 @@ getgenv().Rivals = {
         AirShotPrediction = 0.2,
         Prediction = 0.14,
         Smoothness = 0.1,
-        ['FoV'] = {
+        FoV = {
             Visible = false,
             Color = Color3.new(1, 1, 1),
             Radius = 1000,
@@ -44,34 +44,25 @@ getgenv().Rivals = {
     },
     
     Safety = {
-        KO_CHECK = true,
-        Grab_CHECK = false
+        KO_CHECK = false,
+        Grab_CHECK = false,
+        LocalPlayer_KOCHECK = true
     },
-    
-    ['Resolver'] = {
-        Bind = "G", -- Not fixxed yet stay tune in the next update
+    Resolver = {
+        Bind = "G", -- Not fixed yet, stay tuned in the next update
         toggle = false
     },
-    ['DottedFov'] = {
-        Visible = false,          
-        Radius = 100,            -- Adjust radius as needed
-        DotSize = 5,             -- Size of each dot
-        DotGap = 14,             -- Gap between dots
-        PulseSpeed = 100,        -- Speed of the pulsing effect
-        ColorSpeed = 100,        -- Speed of the color transition for RGB effect
-    },
-    
-    ['Features'] = {
+    Features = {
         wallcheck = false,
         gunCheck = false,
         Tracers = {
             Visible = true,
             Color = Color3.fromRGB(255, 255, 255),
-            Thickness = 1,
-            Transparency = 4,
+            Thickness = 2,
+            Transparency = 0.4,
             HighlightColor = Color3.fromRGB(255, 255, 255),
-            HighlightThickness = 1,
-            HighlightTransparency = 5
+            HighlightThickness = 2,
+            HighlightTransparency = 0.7
         },
         FOV = {
             Visible = false,
@@ -82,14 +73,14 @@ getgenv().Rivals = {
         },
         Circle = {
             Visible = true,
-            Radius = 34,
+            Radius = 68,
             Color = Color3.fromRGB(0, 0, 0),
-            Thickness = 1,
-            Transparency = 5,
-            HighlightRadius = 34,
+            Thickness = 0.5,
+            Transparency = 0,
+            HighlightRadius = 67,
             HighlightColor = Color3.fromRGB(255, 0, 0),
-            HighlightThickness = 1,
-            HighlightTransparency = 5
+            HighlightThickness = 4,
+            HighlightTransparency = 0.6
         }
     }
 }
